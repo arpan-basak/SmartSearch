@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_automation_description">Lets Apex AI open an app and perform a search only when you give a command. It does not make purchases, send messages, or enter passwords.</string>
+    <string name="app_name">Apex AI</string>
+    <string name="widget_description">Search contacts, apps, files, and the web from the home screen.</string>
+    <string name="widget_search">Open Apex AI</string>
+</resources>

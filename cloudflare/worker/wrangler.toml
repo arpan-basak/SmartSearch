@@ -1,0 +1,23 @@
+name = "apex-cloud-index"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "apex-cloud-index"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "OBJECTS"
+bucket_name = "apex-cloud-index-private"
+
+[[vectorize]]
+binding = "INDEX"
+index_name = "apex-cloud-index"
+
+[vars]
+FIREBASE_PROJECT_ID = "REPLACE_WITH_FIREBASE_PROJECT_ID"
+EMBEDDING_DIMENSIONS = "384"
+MAX_REQUEST_BYTES = "1048576"
+RATE_LIMIT_PER_MINUTE = "60"

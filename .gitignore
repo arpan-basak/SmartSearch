@@ -1,0 +1,84 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+/android/build/
+/android/.gradle/
+**/node_modules/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+android/key.properties
+*.jks
+*.keystore
+
+# Local service credentials and per-developer configuration. Never commit these.
+/android/app/google-services.json
+/.env
+/.env.*
+!/.env.example
+/cloudflare/worker/.dev.vars
+
+# Private working material and generated review/pitch artifacts.
+/.artifacts/
+/.agents/
+/.codex/
+/.codex_build_incubator_pitch/
+/.codex_pitch_inspect_*/
+/deliverables/
+/design/
+/poster_assets/
+/tmp_preseed_deck/
+/Smart_Search_PreSeed_Appendix/
+/Smart_Search_PreSeed_Pitch_Deck/
+/Smart_Search_PreSeed_Appendix.pptx
+/Smart_Search_PreSeed_Appendix.pptx.inspect.ndjson
+/Smart_Search_PreSeed_Pitch_Deck.pptx
+/Smart_Search_PreSeed_Pitch_Deck.pptx.inspect.ndjson
+/Startup_Brief_Smart_Search.docx
+/qa-*.png
+
+# Publish one public overview only; internal notes stay local.
+*.md
+!README.md
+
+# Private retrieval labels and exported on-device document metadata.
+/benchmark/*.local.json

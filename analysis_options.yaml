@@ -1,0 +1,7 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Keep cross-feature dependencies explicit and imports predictable.
+    always_use_package_imports: true
+    directives_ordering: true

@@ -1,0 +1,7 @@
+FIREBASE_PROJECT_ID=your-firebase-project-id
+TENANT_HMAC_SECRET=replace-with-a-long-random-secret
+EMBEDDING_DIMENSIONS=384
+MAX_REQUEST_BYTES=1048576
+RATE_LIMIT_PER_MINUTE=60
+# Optional defense in depth. Set to true only after App Check verification is configured.
+APP_CHECK_REQUIRED=false

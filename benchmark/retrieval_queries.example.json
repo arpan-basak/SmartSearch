@@ -1,0 +1,28 @@
+{
+  "documents": [
+    {
+      "name": "GPU Programming Module 4.pdf",
+      "path": "content://example/gpu-module-4",
+      "type": "application/pdf",
+      "content": "CUDA kernels, warps, shared memory and coalesced global memory access.",
+      "embedding": "",
+      "fileEmbedding": "",
+      "modified": 1
+    },
+    {
+      "name": "Python Notes.pdf",
+      "path": "content://example/python-notes",
+      "type": "application/pdf",
+      "content": "Python lists, dictionaries and memory allocation.",
+      "embedding": "",
+      "fileEmbedding": "",
+      "modified": 1
+    }
+  ],
+  "queries": [
+    {
+      "query": "notes about making GPU memory faster",
+      "relevantPaths": ["content://example/gpu-module-4"]
+    }
+  ]
+}

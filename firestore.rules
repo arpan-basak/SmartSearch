@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // A signed-in user can access only their own preference document.
+    match /users/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null
+          && request.auth.uid == userId
+          && request.resource.data.keys().hasOnly(['themeMode', 'updatedAt'])
+          && request.resource.data.themeMode is int
+          && request.resource.data.themeMode >= 0
+          && request.resource.data.themeMode <= 2;
+      allow update: if request.auth != null
+          && request.auth.uid == userId
+          && request.resource.data.diff(resource.data).affectedKeys()
+              .hasOnly(['themeMode', 'updatedAt'])
+          && request.resource.data.themeMode is int
+          && request.resource.data.themeMode >= 0
+          && request.resource.data.themeMode <= 2;
+      allow delete: if false;
+    }
+  }
+}
